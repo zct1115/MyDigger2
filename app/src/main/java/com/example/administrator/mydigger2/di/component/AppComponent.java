@@ -13,13 +13,24 @@ import javax.inject.Singleton;
 import dagger.Component;
 
 /**
- * Created by Administrator on 2017/11/27.
+ * @author zct
+ *         Created by Administrator on 2017/11/27.
  */
 @Singleton
 @Component(modules = {AppModule.class, ApiModule.class, HttpModule.class})
 public interface AppComponent {
+    /**
+     * app应用
+     *
+     * @return
+     */
     Application application();
 
 
+    /**
+     * gson
+     *
+     * @return
+     */
     Gson gson();
 }

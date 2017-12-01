@@ -15,7 +15,9 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
 /**
+ * @author zct
  * Created by Administrator on 2017/11/27.
+ * @param <P>
  */
 
 public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivity {
@@ -43,11 +45,19 @@ public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivi
 
     /**
      * 依赖注入的入口
+     * @param appComponent
      */
     protected abstract void setupActivityComponent(AppComponent appComponent);
 
 
+    /**
+     * 初始化试图
+     * @return
+     */
     protected abstract View initView();
 
+    /**
+     * 初始化数据
+     */
     protected abstract void initData();
 }

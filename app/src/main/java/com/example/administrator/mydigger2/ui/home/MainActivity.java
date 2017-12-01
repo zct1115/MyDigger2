@@ -9,6 +9,10 @@ import com.example.administrator.mydigger2.R;
 import com.example.administrator.mydigger2.base.mvp.BaseActivity;
 import com.example.administrator.mydigger2.di.component.AppComponent;
 
+/**
+ * @author zct
+ * Created by Administrator on 2017/11/27.
+ */
 public class MainActivity extends BaseActivity {
 
 

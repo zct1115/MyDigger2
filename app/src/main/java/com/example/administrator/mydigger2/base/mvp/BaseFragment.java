@@ -12,6 +12,8 @@ import javax.inject.Inject;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 /**
+ *
+ * @author zct
  * Created by Administrator on 2017/11/27.
  */
 
@@ -35,20 +37,22 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mActivity = (BaseActivity) getActivity();
-        ComponentInject();
+        componentInJect();
         initData();
     }
 
     /**
      * 依赖注入的入口
      */
-    protected abstract void ComponentInject();
+    protected abstract void componentInJect();
 
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        if (mUnbinder != Unbinder.EMPTY) mUnbinder.unbind();
+        if (mUnbinder != Unbinder.EMPTY) {
+            mUnbinder.unbind();
+        }
     }
 
     @Override
@@ -61,9 +65,18 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment {
     }
 
 
-
+    /**
+     * 初始化fragment布局
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     protected abstract View initView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState);
 
+    /**
+     * 加载数据
+     */
     protected abstract void initData();
 
 

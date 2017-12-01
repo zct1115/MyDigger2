@@ -6,6 +6,7 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 
 /**
+ * @author zct
  * Created by Administrator on 2017/11/27.
  */
 @Singleton

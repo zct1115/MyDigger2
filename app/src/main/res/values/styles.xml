@@ -12,7 +12,9 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
-
+    <style name="AppTheme.Launcher">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
 
 
 </resources>

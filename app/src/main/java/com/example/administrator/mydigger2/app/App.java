@@ -5,6 +5,7 @@ import android.app.Application;
 import com.example.administrator.mydigger2.di.component.AppComponent;
 
 /**
+ * @author zct
  * Created by Administrator on 2017/11/27.
  */
 
