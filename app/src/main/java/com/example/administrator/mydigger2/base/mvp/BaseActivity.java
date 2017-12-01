@@ -8,6 +8,8 @@ import android.view.View;
 
 import com.example.administrator.mydigger2.app.App;
 import com.example.administrator.mydigger2.di.component.AppComponent;
+import com.orhanobut.logger.AndroidLogAdapter;
+import com.orhanobut.logger.Logger;
 
 import javax.inject.Inject;
 

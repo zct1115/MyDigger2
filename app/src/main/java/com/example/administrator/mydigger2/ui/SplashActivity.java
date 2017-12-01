@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.example.administrator.mydigger2.ui.home.MainActivity;
 import com.example.administrator.mydigger2.R;
+import com.orhanobut.logger.Logger;
 
 /**
  * @author zct

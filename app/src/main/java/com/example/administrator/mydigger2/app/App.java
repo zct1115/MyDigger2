@@ -3,6 +3,8 @@ package com.example.administrator.mydigger2.app;
 import android.app.Application;
 
 import com.example.administrator.mydigger2.di.component.AppComponent;
+import com.orhanobut.logger.AndroidLogAdapter;
+import com.orhanobut.logger.Logger;
 
 /**
  * @author zct
@@ -19,7 +21,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
+        Logger.addLogAdapter(new AndroidLogAdapter());
 
     }
 }
